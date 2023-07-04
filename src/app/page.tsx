@@ -1,30 +1,30 @@
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start  py-20">
-      <div className="flex flex-col z-10  max-w-8xl mx-32 items-start justify-between ">
-        <div className="flex gap-12 items-baseline mb-12 font-mono ">
+    <main className="flex min-h-screen flex-col items-start py-10lg:max-w-lg md:py-20" >
+      <div className="flex flex-col z-10 px-6 w-sm md:max-w-8xl md:mx-32 items-start justify-between ">
+        <div className="flex flex-col mb-6 font-mono md:flex-row md:gap-12 items-baseline md:mb-12  ">
           <h1 className="text-xl">Daggiana Madrid</h1>
           <a className="text-sky-600/60 hover:text-gray-700 text-sm" href="mailto:daggianama@gmail.com">daggianama@gmail.com</a>
         </div>
         <div className="flex flex-col gap-3 text-gray-500 text-sm mb-20 max-w-xl">
-          <p>I&apos;m a Developer with a diverse background in creative topics: painting, visual arts, research and design. <br></br>Around 10 years old, I learned about coding with <a className="text-sky-600/60 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
+          <p>I&apos;m a Developer based in Barcelona with a diverse background in creative topics: painting, visual arts, research and design. <br></br>Around 10 years old, I learned about coding with <a className="text-sky-600/60 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
               rel="noopener noreferrer">Logo language</a>, which led me to my fascination for problem-solving and building by experimenting with computer programs.</p>
-          <p> I&apos;m interested in Human-computer Interaction, Web interaction, Data visualization, Data science and Computational ethics.</p>
+          <p> I&apos;m interested in Human-computer Interaction, Data visualization, Data science and Computational ethics.</p>
         </div>
-        <div className="flex flex-col  text-sm gap-3">
-          <a href="https://daggianamadrid.com" target="_blank" rel="noopener noreferrer"
-            className="w-36 justify-center border-white  backdrop-blur-2xl    lg:rounded-xl lg:border lg:p-3 hover:bg-white" >UX/UI projects</a>
-            <a
-              className="w-36 justify-center border-white  backdrop-blur-2xl  lg:rounded-xl lg:border lg:p-3 hover:bg-white"
+        <div className="flex flex-col  text-sm gap-3 font-mono">
+        <a
+              className="w-36 bg-white/40 text-center border-white  backdrop-blur-2xl  rounded-xl border p-1 md:p-3 md:hover:bg-white/80"
               href="https://github.com/daggianama"
               target="_blank"
               rel="noopener noreferrer"
             >
-            Github
+            Development
           </a>
+          <a href="https://daggianamadrid.com" target="_blank" rel="noopener noreferrer"
+           className="w-36 bg-white/40 text-center border-white  backdrop-blur-2xl  rounded-xl border p-1 md:p-3 md:hover:bg-white/80" >UX/UI</a>
           <a
-              className="w-36 justify-center border-white  backdrop-blur-2xl  lg:rounded-xl lg:border lg:p-3 hover:bg-white"
+              className="w-36 bg-white/40 text-center border-white  backdrop-blur-2xl  rounded-xl border p-1 md:p-3 md:hover:bg-white/80"
               href="https://www.instagram.com/daggianama/"
               target="_blank"
               rel="noopener noreferrer"
