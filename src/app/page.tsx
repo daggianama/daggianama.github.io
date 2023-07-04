@@ -1,11 +1,10 @@
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-start  py-20">
       <div className="flex flex-col z-10  max-w-8xl mx-32 items-start justify-between ">
         <div className="flex gap-12 items-baseline mb-12 font-mono ">
-          <h1 className='text-xl'>Daggiana Madrid</h1>
+          <h1 className="text-xl">Daggiana Madrid</h1>
           <a className="text-sky-600/60 hover:text-gray-700 text-sm" href="mailto:daggianama@gmail.com">daggianama@gmail.com</a>
         </div>
         <div className="flex flex-col gap-3 text-gray-500 text-sm mb-20 max-w-xl">
