@@ -8,7 +8,7 @@ export default function Home() {
           <a className="text-sky-600/60 hover:text-gray-700 text-sm" href="mailto:daggianama@gmail.com">daggianama@gmail.com</a>
         </div>
         <div className="flex flex-col gap-3 text-gray-500 text-sm mb-20 max-w-xl">
-          <p>I&apos;m a Developer based in Barcelona with a diverse background in creative topics: painting, visual arts, research and design. <br></br>Around 10 years old, I learned about coding with <a className="text-sky-600/60 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
+          <p>Developer and artist based in Barcelona with a diverse background in creative topics: visual arts, 3d printing, video-art, research and design. <br></br>Around 10 years old, I learned about coding with <a className="text-sky-600/60 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
               rel="noopener noreferrer">Logo language</a>, which led me to my fascination for problem-solving and building by experimenting with computer programs.</p>
           <p> I&apos;m interested in Human-computer Interaction, Data visualization, Data science and Computational ethics.</p>
         </div>
