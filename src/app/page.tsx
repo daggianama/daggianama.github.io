@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start py-10lg:max-w-lg md:py-20" >
+    <main className="flex min-h-screen pt-12 flex-col items-start py-10lg:max-w-lg md:py-20" >
       <div className="flex flex-col z-10 px-6 w-sm md:max-w-8xl md:mx-32 items-start justify-between ">
         <div className="flex flex-col mb-6 font-mono md:flex-row md:gap-12 items-baseline md:mb-12  ">
           <h1 className="text-xl">Daggiana Madrid</h1>
