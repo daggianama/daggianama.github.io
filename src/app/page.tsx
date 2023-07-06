@@ -19,7 +19,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            Development
+            Code
           </a>
           <a href="https://daggianamadrid.com" target="_blank" rel="noopener noreferrer"
            className="w-36 bg-white/40 text-center border-white  backdrop-blur-2xl  rounded-xl border p-1 md:p-3 md:hover:bg-white/80" >UX/UI</a>
@@ -29,21 +29,21 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            Visual Art
+            Visual
           </a>
           <a
-            className="w-36 bg-white/40 text-center border-white  backdrop-blur-2xl  rounded-xl border p-1 md:p-3 md:hover:bg-white/80"
+            className="w-36 text-center opacity-60 backdrop-blur-2xl  md:p-3 md:hover"
             href="https://www"
             target="_blank"
             rel="noopener noreferrer"
           >
-            playground
+           dev playground
 
           </a>
           </div>
       </div>
 
-      <div className="flex absolute bottom-2 right-80 before:h-[280px] before:w-[400px] before:-translate-x-1/3 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-xl after:absolute after:-z-20 after:h-[200px] after:w-[400px] after:translate-x-1/3 after:bg-gradient-conic after:from-red-200 after:via-orange-100 after:blur-2xl  before:lg:h-[300px]">
+      <div className="flex z-8 absolute bottom-2 right-80 before:h-[280px] before:w-[400px] before:-translate-x-1/3 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-xl after:absolute after:-z-20 after:h-[200px] after:w-[400px] after:translate-x-1/3 after:bg-gradient-conic after:from-red-200 after:via-orange-100 after:blur-2xl  before:lg:h-[300px]">
         
         
       </div>
