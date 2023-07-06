@@ -30,7 +30,16 @@ export default function Home() {
               rel="noopener noreferrer"
             >
             Visual Art
-            </a>
+          </a>
+          <a
+            className="w-36 bg-white/40 text-center border-white  backdrop-blur-2xl  rounded-xl border p-1 md:p-3 md:hover:bg-white/80"
+            href="https://www"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            playground
+
+          </a>
           </div>
       </div>
 
