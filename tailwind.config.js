@@ -1,26 +1,49 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'main-blue': '#9ecbfc',
+        'secondary': "#585858",
+        'danger': '#e3342f',
       },
-      screens: {
-        'sm': '640px',      // Pequeños dispositivos móviles (por defecto: 640px)
-        'md': '768px',      // Dispositivos móviles medianos (por defecto: 768px)
-        'lg': '1024px',     // Dispositivos móviles grandes (por defecto: 1024px)
-        'xl': '1280px',
+      width: {
+        '40vw': '40vw',
+        '50vw': '50vw',
+        '60vw': '60vw',
+        '70vw': '70vw',
+        '80vw': '80vw',
+        '90vw': '90vw',
+        '100vw': '100vw',
+      },
+      height: {
+        '50vh': '50vh',
+        '60vh': '60vh',
+        '70vh': '70vh',
+        '80vh': '80vh',
+        '90vh': '90vh',
+        '100vh': '100vh',
+      },
 
-      },
     },
+    fontFamily: {
+      roboto: ['Roboto, sans-serif'],
+      montserrat: ['Montserrat, sans-serif'],
+      lato: ['Lato, sans-serif'],
+      poppins: ['Poppins, sans-serif'],
+      mono: ['Roboto Mono', 'monospace'],
+    },
+    container: {
+      center: true,
+      padding: '.1rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+    }
   },
-  
+
   plugins: [],
 }
+
