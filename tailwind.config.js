@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-blue': '#9ecbfc',
+        'main-blue': '#5a96d7',
         'secondary': "#585858",
         'danger': '#e3342f',
       },
@@ -32,7 +32,7 @@ module.exports = {
       montserrat: ['Montserrat, sans-serif'],
       lato: ['Lato, sans-serif'],
       poppins: ['Poppins, sans-serif'],
-      mono: ['Roboto Mono', 'monospace'],
+      mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas' ]
     },
     container: {
       center: true,
