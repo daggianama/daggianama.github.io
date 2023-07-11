@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio_vue/',
+  base: '/daggianama/',
   plugins: [vue()],
   resolve: {
     alias: {
