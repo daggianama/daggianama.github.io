@@ -1,6 +1,6 @@
 <template>
   <div class=" ">
-    <p5 />
+    
      
     <main class="flex min-h-screen max-w-md pt-12 flex-col items-start py-10 md:max-w-2xl md:pt-24" >
       
@@ -125,6 +125,7 @@
         </a>
       </div> */} -->
     </main>
+    <p5 />
   </div>
 </template>
 <!-- if isAdmin is true, render admin component 
