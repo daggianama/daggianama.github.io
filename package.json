@@ -1,8 +1,8 @@
 {
-  "name": "portfolio_vue",
+  "name": "daggianama",
   "version": "0.2.0",
   "private": true,
-  "author": "Krista Moroder & Germinal Camps for CodeOp",
+  "author": "Daggiana Madrid",
   "license": "Proprietary",
   "scripts": {
     "dev": "vite",
@@ -15,8 +15,7 @@
     "gh-pages": "^3.0.0",
     "p5": "^1.6.0",
     "sass": "^1.63.6",
-    "vue": "^2.7.14",
-    "vue-p5": "^0.8.4",
+    "vue": "^3.2.26",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
