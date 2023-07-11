@@ -23,7 +23,7 @@ export default {
                 s.background(0);
 
                 t = 0;
-                nl = 0.00055;
+                nl = 0.00085;
                 density = 2;
                 totalX = s.windowWidth;
                 totalY = s.windowHeight;
@@ -51,16 +51,16 @@ export default {
             };
 
             s.draw = () => {
-                let n = s.noise(s.mouseX / 899, s.mouseY / 899);
-                let size = n * s.windowWidth * 22;
+                // let n = s.noise(s.mouseX / 899, s.mouseY / 899);
+                // let size = n * s.windowWidth * 22;
 
   
-                s.colorMode(s.HSL, 100)
-                let finalColor = s.color(n * 17, 2, n * 245, 0.4)
+                // s.colorMode(s.HSL, 100)
+                // let finalColor = s.color(n * 17, 2, n * 245, 0.4)
 
-                s.noStroke();
-                s.fill(finalColor);
-                s.circle(s.mouseX, s.mouseY, size);
+                // s.noStroke();
+                // s.fill(finalColor);
+                // s.circle(s.mouseX, s.mouseY, size);
               
                 
                
