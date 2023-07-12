@@ -12,40 +12,40 @@
             </p>
             <p>Around 10 years old, I learned about coding with <a className="text-main-blue/90 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
               rel="noopener noreferrer">Logo language</a>, which led me to my fascination for problem-solving and building by experimenting with computer programs.</p>
-          <p> I&apos;m interested in Human-computer Interaction, Data visualization, Data science and Computational ethics.</p>
+          <p> Some of my interests are Creative development, Human-computer Interaction, Data visualization, Computational ethics, among others topics related humans and technology.</p>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap  ml-0 text-sm md:w-full items-center gap-2 ">
+        <div class="flex flex-wrap md:flex-nowrap  ml-0 text-sm md:w-full items-center gap-2 mt-6">
           <a
               class="md:w-auto w-1/2 bg-white/20 text-center   backdrop-blur-2xl border border-black/50   p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
               href="https://github.com/daggianama"
               target="_blank"
               rel="noopener noreferrer"
             >
-           Code
+           Github
           </a>
           <a href="https://daggianamadrid.com" target="_blank" rel="noopener noreferrer"
           class="md:w-auto w-1/2 bg-white/20 text-center  backdrop-blur-2xl  border border-black/50 p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
            >UX/UI</a>
           <a
-          class=" w-1/2 md:w-auto bg-white/20 text-center  backdrop-blur-2xl  border border-black/50 p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
+          class=" w-full md:w-auto bg-white/20 text-center  backdrop-blur-2xl  border border-black/50 p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
               href="https://www.instagram.com/daggianama/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            Visual
+            Visual work
           </a>
           <button 
             @click="showPlayground"
-            class="w-1/2 md:w-full bg-main-blue/40 border border-white  text-white/90 text-center p-1 md:p-2 md:hover:border md:hover:bg-main-blue/80 md:hover:border-white/0"
+            class="w-1/2 md:w-auto bg-main-blue/40 border border-white  text-white/90 text-center p-1 md:p-2 md:hover:border md:hover:bg-main-blue/80 md:hover:border-white/0"
             
           >
            PLAYGROUND
 
           </button>
         </div>
-        <div class="mt-12 font-mono text-main-blue text-md md:w-full">
+        <div class="mt-4 text-sm font-mono text-main-blue text-md md:w-full">
           <button  @click="toggleLinks" >
-            <span class="text-main-blue/80 hover:text-main-blue">Human-Technology readings</span>
+            <span class="text-main-blue/80 hover:text-main-blue">My reading links</span>
           </button>
         
         </div>
