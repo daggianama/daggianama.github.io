@@ -1,13 +1,13 @@
 <template>
   <div class=" ">
-    <main class="flex min-h-screen max-w-md pt-10 flex-col items-start py-10 md:max-w-2xl md:pt-24" >
+    <main class="flex min-h-screen max-w-md pt-8 flex-col items-start py-8 md:max-w-2xl md:ml-28 md:pt-20" >
       
-      <div class="flex flex-col gap-2 z-10  text-gray-800 px-6 w-sm md:ml-28 items-start justify-between ">
+      <div class="flex flex-col gap-1 md:gap-2 z-10  text-gray-800 px-6 w-sm  items-start justify-between ">
         <div class="flex flex-wrap md:flex md:gap-6 items-baseline   ">
           <h1 class="text-2xl font-mono ">Daggiana Madrid</h1>
           <a class="text-main-blue text-sm" href="mailto:daggianama@gmail.com">daggianama@gmail.com</a>
         </div>
-        <div class="flex font-light flex-col gap-3 py-4  text-gray-600 text-sm mb-2 ">
+        <div class="flex font-light flex-col gap-3 py-2  text-gray-600 text-sm mb-2 ">
           <p>Developer and artist based in Barcelona with a diverse background in creative topics: visual arts, 3d printing, video-art, research and design.
             </p>
             <p>Around 10 years old, I learned about coding with <a className="text-main-blue/90 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
@@ -27,7 +27,7 @@
           class="md:w-auto w-1/2 bg-white/20 text-center  backdrop-blur-2xl  border border-black/50 p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
            >UX/UI</a>
           <a
-          class=" w-full md:w-auto bg-white/20 text-center  backdrop-blur-2xl  border border-black/50 p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
+          class=" w-1/2 md:w-auto bg-white/20 text-center  backdrop-blur-2xl  border border-black/50 p-1 md:p-2 md:px-4 md:hover:bg-white/40 md:hover:border md:hover:border-white/60"
               href="https://www.instagram.com/daggianama/"
               target="_blank"
               rel="noopener noreferrer"
