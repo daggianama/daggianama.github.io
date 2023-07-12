@@ -37,7 +37,7 @@
             Visual
           </a>
           <a
-            className="w-1/2 md:w-full bg-main-blue/40 border border-white  text-white/90 text-center p-1 md:p-2 md:hover:border md:hover:bg-main-blue/80 md:hover:border-white/0"
+            class="w-1/2 md:w-full bg-main-blue/40 border border-white  text-white/90 text-center p-1 md:p-2 md:hover:border md:hover:bg-main-blue/80 md:hover:border-white/0"
             href="https://www"
             target="_blank"
             rel="noopener noreferrer"
@@ -46,8 +46,12 @@
 
           </a>
         </div>
-      
+        <div class="mt-12 font-mono text-main-blue text-md md:w-full">
+          <button  @click="toggleLinks" class="text-main-blue/90 hover:text-main-blue">
+            <span class="text-main-blue/90 hover:text-main-blue/80">Human-Technology readings</span>
+          </button>
         
+        </div>
       </div>
 
       <!-- {/* <div className="flex z-8 absolute bottom-2 right-80 before:h-[280px] before:w-[400px] before:-translate-x-1/3 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-xl after:absolute after:-z-20 after:h-[200px] after:w-[400px] after:translate-x-1/3 after:bg-gradient-conic after:from-red-200 after:via-orange-100 after:blur-2xl  before:lg:h-[300px]">
@@ -56,12 +60,7 @@
       </div> */}
 {/* 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Docs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -89,13 +88,6 @@
             Learn about Next.js in an interactive course with&nbsp;quizzes!
           </p>
         </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Templates{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -113,43 +105,45 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
+        
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
       </div> */} -->
+      <links v-if="showLinks"/>
     </main>
+    
     <p5 />
   </div>
 </template>
-<!-- if isAdmin is true, render admin component 
-      v-else user view will be shown  -->
-      <!-- in admin @create is the scream of the child and capture ir on addproject -->
 
 
 
 <script >
 
-import { RouterLink } from "vue-router";
 import p5 from './components/p5.vue';
-
+import links from './components/links.vue';
 
 
 export default {
   name: "app",
   components: {
-
+    links,
     p5,
   },
   data() {
     return {
-    }
+      showLinks: false,
+
+
+    };
+  },
+  methods: {
+    toggleLinks() {
+      this.showLinks = !this.showLinks;
+    },
+   
   },
 };
 </script>

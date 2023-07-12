@@ -24,7 +24,7 @@ export default {
 
                 t = 0;
                 nl = 0.00085;
-                density = 2;
+                density = 3.5;
                 totalX = s.windowWidth;
                 totalY = s.windowHeight;
 
