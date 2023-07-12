@@ -2,8 +2,8 @@
   <div class=" ">
     <main class="flex min-h-screen max-w-md pt-10 flex-col items-start py-10 md:max-w-2xl md:pt-24" >
       
-      <div class="flex flex-col gap-3 z-10  text-gray-800 px-6 w-sm md:ml-28 items-start justify-between ">
-        <div class="flex flex-wrap mb-3 md:flex md:gap-6 items-baseline md:mb-6  ">
+      <div class="flex flex-col gap-2 z-10  text-gray-800 px-6 w-sm md:ml-28 items-start justify-between ">
+        <div class="flex flex-wrap md:flex md:gap-6 items-baseline   ">
           <h1 class="text-2xl font-mono ">Daggiana Madrid</h1>
           <a class="text-main-blue text-sm" href="mailto:daggianama@gmail.com">daggianama@gmail.com</a>
         </div>
