@@ -23,13 +23,13 @@ export default {
                 s.background(0);
 
                 t = 0;
-                nl = 0.00085;
-                density = 3.5;
+                nl = 0.00050;
+                density = 3.6;
                 totalX = s.windowWidth;
                 totalY = s.windowHeight;
 
-                let c1 = s.color("#f3fcff");
-                let c2 = s.color("#9ecbfc");
+                let c1 = s.color("#f7fcff");
+                let c2 = s.color("#bcddfa");
 
                 for (let x = 0; x < totalX; x = x + 1) {
                     for (let y = 0; y < totalY; y = y + 1) {

@@ -1,15 +1,13 @@
 <template>
   <div class=" ">
-    
-     
-    <main class="flex min-h-screen max-w-md pt-12 flex-col items-start py-10 md:max-w-2xl md:pt-24" >
+    <main class="flex min-h-screen max-w-md pt-10 flex-col items-start py-10 md:max-w-2xl md:pt-24" >
       
       <div class="flex flex-col gap-3 z-10  text-gray-800 px-6 w-sm md:ml-28 items-start justify-between ">
         <div class="flex flex-wrap mb-3 md:flex md:gap-6 items-baseline md:mb-6  ">
           <h1 class="text-2xl font-mono ">Daggiana Madrid</h1>
           <a class="text-main-blue text-sm" href="mailto:daggianama@gmail.com">daggianama@gmail.com</a>
         </div>
-        <div class="flex font-light flex-col gap-3 p-4 md:py-6 bg-white/30 text-gray-600 border border-white/50 text-sm mb-2 ">
+        <div class="flex font-light flex-col gap-3 py-4  text-gray-600 text-sm mb-2 ">
           <p>Developer and artist based in Barcelona with a diverse background in creative topics: visual arts, 3d printing, video-art, research and design.
             </p>
             <p>Around 10 years old, I learned about coding with <a className="text-main-blue/90 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
@@ -36,19 +34,18 @@
             >
             Visual
           </a>
-          <a
+          <button 
+            @click="showPlayground"
             class="w-1/2 md:w-full bg-main-blue/40 border border-white  text-white/90 text-center p-1 md:p-2 md:hover:border md:hover:bg-main-blue/80 md:hover:border-white/0"
-            href="https://www"
-            target="_blank"
-            rel="noopener noreferrer"
+            
           >
            PLAYGROUND
 
-          </a>
+          </button>
         </div>
         <div class="mt-12 font-mono text-main-blue text-md md:w-full">
-          <button  @click="toggleLinks" class="text-main-blue/90 hover:text-main-blue">
-            <span class="text-main-blue/90 hover:text-main-blue/80">Human-Technology readings</span>
+          <button  @click="toggleLinks" >
+            <span class="text-main-blue/80 hover:text-main-blue">Human-Technology readings</span>
           </button>
         
         </div>
@@ -112,6 +109,7 @@
         </a>
       </div> */} -->
       <links v-if="showLinks"/>
+      <playground v-if="showPlaygroundMsg"/>
     </main>
     
     <p5 />
@@ -124,6 +122,7 @@
 
 import p5 from './components/p5.vue';
 import links from './components/links.vue';
+import playground from './components/playground.vue';
 
 
 export default {
@@ -131,10 +130,12 @@ export default {
   components: {
     links,
     p5,
+    playground,
   },
   data() {
     return {
       showLinks: false,
+      showPlaygroundMsg: false,
 
 
     };
@@ -142,6 +143,12 @@ export default {
   methods: {
     toggleLinks() {
       this.showLinks = !this.showLinks;
+      this.showPlaygroundMsg = false;
+    },
+    showPlayground() {
+      this.showLinks = false;
+      this.showPlaygroundMsg = !this.showPlaygroundMsg;
+
     },
    
   },
