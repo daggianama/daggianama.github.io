@@ -12,7 +12,7 @@
             </p>
             <p>Around 10 years old, I learned about coding with <a className="text-main-blue/90 " href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html" target="_blank"
               rel="noopener noreferrer">Logo language</a>, which led me to my fascination for problem-solving and building by experimenting with computer programs.</p>
-          <p> Some of my interests are Creative development, Human-computer Interaction, Data visualization, Computational ethics, among others topics related humans and technology.</p>
+          <p> Some of my interests are Creative development, Human-computer Interaction, Information technology, Computational ethics, among others topics related humans and technology.</p>
         </div>
         <div class="flex flex-wrap md:flex-nowrap  ml-0 text-sm md:w-full items-center gap-2 mt-6">
           <a
