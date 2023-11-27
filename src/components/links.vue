@@ -13,6 +13,12 @@
 
         </li>
         <li>
+            <a href="https://projects.kwon.nyc/internet-is-fun/"
+            target="_blank"
+              rel="noopener noreferrer">· The internet used to be ✨fun✨</a>
+
+        </li>
+        <li>
             <a href="https://ptgmedia.pearsoncmg.com/images/9780321918628/samplepages/0321918622.pdf"
             target="_blank"
               rel="noopener noreferrer">
