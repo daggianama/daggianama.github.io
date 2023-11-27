@@ -15,12 +15,23 @@
         <li>
             <a href="https://projects.kwon.nyc/internet-is-fun/"
             target="_blank"
+            title="texts & articles related internet nostalgia"
+
               rel="noopener noreferrer">· The internet used to be ✨fun✨</a>
+
+        </li>
+        <li>
+            <a href="https://softglossary.space/"
+            target="_blank"
+            title="tools and stuff for junior web devs"
+              rel="noopener noreferrer">· Soft space for web design & code</a>
 
         </li>
         <li>
             <a href="https://ptgmedia.pearsoncmg.com/images/9780321918628/samplepages/0321918622.pdf"
             target="_blank"
+            title="pdf book about computers"
+
               rel="noopener noreferrer">
                 · Computers as Theater.
             </a>
