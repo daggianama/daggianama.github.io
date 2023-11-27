@@ -43,7 +43,7 @@
 
           </button>
         </div>
-        <div class="mt-4 text-sm font-mono text-main-blue text-md md:w-full">
+        <div class="mt-4 text-sm font-mono text-decoration-line: underline text-main-blue text-md md:w-full">
           <button  @click="toggleLinks" >
             <span class="text-main-blue/80 hover:text-main-blue">My reading links</span>
           </button>
