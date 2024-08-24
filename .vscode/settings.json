@@ -1,0 +1,7 @@
+{
+    "prettier.printWidth": 60,
+    "prettier.useTabs": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.experimentalTernaries": true,
+    "prettier.enableDebugLogs": true
+}

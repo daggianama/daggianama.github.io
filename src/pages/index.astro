@@ -1,0 +1,34 @@
+---
+// import Background from '../App.vue'
+import Background from '../components/p5.vue';
+import Home from '../App.vue';
+
+import '../styles.css'
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} /> -->
+	</head>
+	<body>
+		<!-- <Header /> -->
+		<main>
+            <Home client:idle />
+            
+			<!-- <section>
+				<div class="main-banner">
+					<div class="img-container">
+						<img src="/Kirsten-Sims-O-Heavens.jpg" alt="Cielo estrellado" />
+
+					</div>
+					<h1>Descubre el poder de los mensajes que esconden tus sueños.</h1>
+				</div>
+			</section> -->
+			
+		</main>
+		<!-- <Footer /> -->
+	</body>
+    <Background client:only />
+</html>
