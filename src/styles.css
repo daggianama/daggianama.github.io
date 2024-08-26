@@ -11,6 +11,56 @@
 * {
     
     line-height: 1.3em;
-    box-sizing: border-box;
     list-style: none;
+}
+
+
+body {
+    margin: 0 2rem;
+    font-size: 2rem;
+}
+
+.name-title {
+  font-size: 3rem;
+}
+
+.main-buttons {
+    gap: 20px;
+}
+
+button {
+    padding: 22px 32px; 
+    font-weight: 300;
+}
+
+
+
+
+@media (min-width: 780px) {
+    * {
+    font-size: 89%;
+}
+    body {
+        margin: 0 7rem;
+    }
+    .name-title {
+        font-size: 24px;
+      }
+
+.description {
+    font-size: 17px;
+    max-width: 38rem;
+}
+.email {
+    font-size: 12px;
+}
+button {
+    font-size: 15px;
+    padding: 2px 15px; 
+}
+.main-buttons {
+    gap: 7px;
+    margin: 10px 0;
+}
+
 }

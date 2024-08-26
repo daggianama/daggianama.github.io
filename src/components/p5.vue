@@ -1,5 +1,5 @@
 <template>
-    <div id="p5Canvas"></div>
+    <div  class="-z-10" id="p5Canvas"></div>
 </template>
 
 

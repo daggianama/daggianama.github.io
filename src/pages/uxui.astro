@@ -1,7 +1,7 @@
 ---
 // import Background from '../App.vue'
 import Background from '../components/p5.vue';
-
+import BaseHead from '../components/BaseHead.vue';
 
 import '../styles.css'
 ---
@@ -10,10 +10,11 @@ import '../styles.css'
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} /> -->
-	</head>
+		
 	<body>
-		<!-- <Header /> -->
+		<BaseHead client:only >
+
+		
 		<main>
           
             
@@ -29,6 +30,7 @@ import '../styles.css'
 			
 		</main>
 		<!-- <Footer /> -->
+		<Background client:only />
 	</body>
-    <Background client:only />
+	
 </html>

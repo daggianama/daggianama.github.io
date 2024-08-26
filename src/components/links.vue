@@ -1,5 +1,5 @@
 <template>
-    <div class=" text-main-blue px-4 py-2 w-sm items-start z-10 mt-2 ml-6  md:py-4  md:ml-32 bg-white/30 border border-main-blue/30 text-sm ">
+    <div class=" text-main-blue p-4 w-sm items-start z-20 mt-2   bg-white/30 border border-main-blue/30 ">
       <ul class="flex flex-col gap-2 font-light">
         <li>
             <a href="https://www.johnseelybrown.com/calmtech.pdf"
