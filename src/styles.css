@@ -33,6 +33,22 @@ button {
     font-weight: 300;
 }
 
+.carrousel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: inherit;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Ocultar scrollbar para IE, Edge y Firefox */
+    scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.card {
+    width: 100%;
+}
 
 
 /* ************ media query for desktop **********/
@@ -61,6 +77,19 @@ button {
 .main-buttons {
     gap: 7px;
     margin: 10px 0;
+}
+
+.carrousel {
+    flex-direction: row;
+    padding: 0 2rem;
+    padding-bottom: 60px;
+
+
+}
+
+.card {
+    min-width: 33vw;
+    max-width: 610px;
 }
 
 }

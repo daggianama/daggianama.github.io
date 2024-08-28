@@ -1,36 +1,21 @@
 ---
-// import Background from '../App.vue'
-import Background from '../components/p5.vue';
-import BaseHead from '../components/BaseHead.vue';
+//import Background from "../components/p5.vue"
+import BaseHead from "../components/BaseHead.vue"
+import CarrouselProjects from "../components/CarrouselProjects.vue"
 
-import '../styles.css'
+import "../styles.css"
 ---
-
 
 <!doctype html>
 <html lang="en">
-	<head>
-		
-	<body>
-		<BaseHead client:only >
+	<head> </head><body>
+		<BaseHead client:only />
+			<main>
+				<CarrouselProjects />
 
+				
+			</main>
+			<!-- <Background client:only /> -->
 		
-		<main>
-          
-            
-			<!-- <section>
-				<div class="main-banner">
-					<div class="img-container">
-						<img src="/Kirsten-Sims-O-Heavens.jpg" alt="Cielo estrellado" />
-
-					</div>
-					<h1>Descubre el poder de los mensajes que esconden tus sueños.</h1>
-				</div>
-			</section> -->
-			
-		</main>
-		<!-- <Footer /> -->
-		<Background client:only />
 	</body>
-	
 </html>
