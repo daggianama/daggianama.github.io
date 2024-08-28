@@ -35,8 +35,8 @@ button {
 
 
 
-
-@media (min-width: 780px) {
+/* ************ media query for desktop **********/
+@media (min-width: 999px) {
     * {
     font-size: 89%;
 }
