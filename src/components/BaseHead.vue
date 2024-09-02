@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="flex flex-col z-20 gap-2 py-14 items-baseline"
+		class="flex flex-col z-20 gap-2 py-12 items-baseline"
 	>
 		<div class="flex gap-14 items-baseline">
 			<h1 class="font-mono name-title">
@@ -15,7 +15,7 @@
 		</div>
 
 		<div
-			class="flex flex-wrap md:flex-nowrap my-14 items-center main-buttons"
+			class="flex flex-wrap md:flex-nowrap my-12 items-center main-buttons"
 		>
 			<button
 				class="w-auto bg-white/20 text-center backdrop-blur-2xl border border-black/50 hover:bg-white/40"

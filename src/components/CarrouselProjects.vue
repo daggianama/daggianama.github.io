@@ -1,5 +1,5 @@
 <template>
-	<div class="carrousel z-20 flex flex-col gap-20 ">
+	<div class="carrousel z-20 flex flex-col gap-24 h-full  pb-12 ">
 		<Card
 			:image="{
 				href: '/img/Frame-Toyota.png',

@@ -4,7 +4,7 @@
 			class="flex flex-col gap-1 z-9 text-gray-800 items-start justify-between"
 		>
 			<div
-				class="description flex font-light flex-col gap-6 py-2 text-gray-600 w-10/12   mb-2"
+				class="description text-4xl flex font-light flex-col gap-6 py-2 text-gray-600 w-10/12   mb-2"
 			>
 				<p>
 					Around 10 years old, I learned about coding with
@@ -27,9 +27,9 @@
 			</div>
 			
 			<div
-				class="mt-4 font-mono text-decoration-line: underline text-main-blue text-md md:w-full"
+				class="mt-10 font-mono text-decoration-line: underline text-main-blue text-md md:w-full"
 			>
-				<button @click="toggleLinks">
+				<button @click="toggleLinks" class="p-0">
 					<a
 						class="text-main-blue/80 hover:text-main-blue"
 						>My reading links</a
