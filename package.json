@@ -16,19 +16,20 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "astro": "^4.14.5",
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^6.2.0",
     "p5": "^1.6.0",
     "sass": "^1.63.6",
+    "three": "^0.170.0",
     "vue": "^3.4.38",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@types/p5": "^1.6.2",
-    "@vitejs/plugin-vue": "^2.3.1",
+    "@vitejs/plugin-vue": "^5.1.4",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.25",
     "prettier": "3.3.3",
     "tailwindcss": "^3.3.2",
-    "vite": "^2.9.5"
+    "vite": "^5.4.10"
   }
 }
