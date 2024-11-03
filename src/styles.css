@@ -1,23 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=RobotoMono+Roboto:wght@300;400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=RobotoMono+Roboto:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 /* ************ APP MAIN **********/
 
 * {
-    
-    line-height: 1.3em;
-    list-style: none;
+  line-height: 1.3em;
+  list-style: none;
 }
 
-
 body {
-    margin: 0 2rem;
-    font-size: 2rem;
+  margin: 0 2rem;
+  font-size: 2rem;
 }
 
 .name-title {
@@ -25,91 +21,91 @@ body {
 }
 
 .main-buttons {
-    gap: 20px;
+  gap: 20px;
 }
 
 button {
-    padding: 22px 32px; 
-    font-weight: 300;
+  padding: 22px 32px;
+  font-weight: 300;
 }
 
 .carrousel {
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: inherit;
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    
-    /* Ocultar scrollbar para IE, Edge y Firefox */
-    scrollbar-width: none;
-    -ms-overflow-style: none;  /* IE and Edge */
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: inherit;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ocultar scrollbar para IE, Edge y Firefox */
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .card {
-    width: 90vw;
-    margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+  width: 90vw;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 /* ************ media query for desktop **********/
 @media (min-width: 999px) {
-    * {
+  * {
     font-size: 89%;
     line-height: 100%;
-}
-    body {
-        margin: 0 7rem;
-    }
-    .name-title {
-        font-size: 24px;
-      }
+  }
+  body {
+    margin: 0 7rem;
+  }
+  .name-title {
+    font-size: 24px;
+  }
 
-.description {
+  .description {
     font-size: 17px;
     max-width: 38rem;
-}
-.email {
+  }
+  .email {
     font-size: 12px;
-}
-button {
+  }
+  button {
     font-size: 15px;
-    padding: 2px 15px; 
-}
-.main-buttons {
+    padding: 2px 15px;
+  }
+  .main-buttons {
     gap: 7px;
     margin: 10px 0;
-}
+  }
 
-.carrousel {
+  .carrousel {
     flex-direction: row;
     padding-right: 1rem;
     padding-left: 10px;
     padding-bottom: 20px;
     gap: 50px;
-}
+  }
 
-.card {
+  .card {
     min-width: 26.4em;
     max-width: 610px;
-}
+  }
 
-.card-content {
+  .card-content {
     padding: 1px 24px;
-}
-.card-title {
+  }
+  .card-title {
     font-size: 20px;
     margin-bottom: 16px;
-}
+  }
 
-.card-description {
+  .card-description {
     font-size: 14px;
     line-height: 152%;
     height: 4.6em;
-}
+  }
 
-.tag {
+  .tag {
     font-size: 13px;
     padding: 0 10px;
-}
-
+  }
 }
