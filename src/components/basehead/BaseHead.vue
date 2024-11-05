@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col z-20 gap-2 py-12 items-baseline">
+  <div class="flex flex-col z-20 gap-2 py-10 items-baseline">
     <div class="flex gap-14 items-baseline">
       <h1 class="font-mono name-title">
         <a href="/">Daggiana Madrid</a>
       </h1>
 
-      <a href="mailto:daggianama@gmail.com" class="text-main-blue email"
+      <!-- <a href="mailto:daggianama@gmail.com" class="text-main-blue email"
         >daggianama@gmail.com</a
-      >
+      > -->
     </div>
 
     <div class="flex flex-wrap md:flex-nowrap my-12 items-center main-buttons">
@@ -38,21 +38,24 @@
           Visual work
         </a>
       </button>
-      <button
-        @click="showPlayground"
-        class="w-auto bg-main-blue/40 text-white/90 text-center md:hover:bg-main-blue/80"
-      >
-        <a>PLAYGROUND</a>
-      </button>
-      <div class="playground-content">
-        <a>Data visualization</a>
-        <a>3D dev</a>
+      <div class="playground">
+        <button
+          @click="showPlayground"
+          class="playground-btn w-auto bg-main-blue/60 text-white/90 text-center md:hover:bg-main-blue/80"
+        >
+          <a>PLAYGROUND</a>
+        </button>
+        <div class="playground-content font-mono text-main-blue text-sm">
+          <a>Data visualization</a>
+          <a>3D dev</a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import './Basehead.css';
 export default {
   name: 'BaseHead',
   components: {},
@@ -72,5 +75,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped></style>

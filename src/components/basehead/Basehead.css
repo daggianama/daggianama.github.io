@@ -1,0 +1,14 @@
+.playground {
+  display: flex;
+  gap: 0.5rem;
+  height: full;
+}
+.playground-content {
+  display: none;
+}
+
+.playground-btn:hover + .playground-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
