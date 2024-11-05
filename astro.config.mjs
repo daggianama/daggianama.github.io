@@ -11,11 +11,6 @@ export default defineConfig({
   renderers: ['@astrojs/renderer-vue'],
   integrations: [vue()],
   vite: {
-    css: {
-      postcss: {
-        plugins: [require('postcss-nesting')],
-      },
-    },
     resolve: {
       alias: {
         '@/': path.resolve('./src'),
