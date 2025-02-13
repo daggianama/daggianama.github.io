@@ -24,6 +24,9 @@
     "vue": "^3.4.38",
     "vue-router": "^4.2.2"
   },
+  "engines": {
+    "node": ">=18.14.1"
+  },
   "devDependencies": {
     "@types/p5": "^1.6.2",
     "@vitejs/plugin-vue": "^5.1.4",

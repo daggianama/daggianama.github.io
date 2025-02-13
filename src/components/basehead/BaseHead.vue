@@ -45,8 +45,11 @@
         >
           <a>PLAYGROUND</a>
         </button>
-        <div class="playground-content font-mono text-main-blue text-sm">
-          <a>Data visualization</a>
+        <div
+          v-if="showPlaygroundMsg"
+          class="playground-content font-mono font-light text-main-blue items-start bg-white/90 border border-main-blue/30"
+        >
+          <a>Data visual</a>
           <a>3D dev</a>
         </div>
       </div>
@@ -62,13 +65,9 @@ export default {
   data() {
     return {
       showPlaygroundMsg: false,
-      showContent: false,
     };
   },
   methods: {
-    showContent() {
-      this.showContent = true;
-    },
     showPlayground() {
       this.showPlaygroundMsg = !this.showPlaygroundMsg;
     },

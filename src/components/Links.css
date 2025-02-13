@@ -1,0 +1,13 @@
+@media (min-width: 999px) {
+  .links-box {
+    width: fit-content;
+
+    a {
+      padding: 0.4em;
+    }
+    a:hover {
+      background-color: #f9f4ed8b;
+      outline: #f59673 solid 0.002em;
+    }
+  }
+}

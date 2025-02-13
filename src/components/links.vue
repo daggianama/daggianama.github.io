@@ -1,8 +1,8 @@
 <template>
   <div
-    class="text-main-blue p-4 w-sm items-start z-20 mt-2 bg-white/30 border border-main-blue/30"
+    class="links-box text-main-blue p-4 w-sm items-start z-20 mt-2 bg-white/60 border border-main-blue/30"
   >
-    <ul class="flex flex-col gap-2 font-light">
+    <ul class="flex flex-col gap-4 font-mono font-light">
       <li>
         <a
           href="https://www.johnseelybrown.com/calmtech.pdf"
@@ -52,9 +52,9 @@
 </template>
 
 <script>
+import './Links.css';
+
 export default {
   name: 'links',
 };
 </script>
-
-<style lang="scss" scoped></style>

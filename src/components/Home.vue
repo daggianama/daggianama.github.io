@@ -29,27 +29,27 @@
         </p>
       </div>
 
-      <div
-        class="mt-4 font-mono text-decoration-line: underline text-main-blue text-md md:w-full"
-      >
+      <div class="mt-4 text-main-blue text-md md:w-full">
         <button @click="toggleLinks" class="p-0">
-          <a class="text-main-blue/80 hover:text-main-blue">My reading links</a>
+          <a class="font-mono text-main-blue/80 hover:text-main-blue"
+            >My reading Links</a
+          >
         </button>
       </div>
     </div>
-    <links v-if="showLinks" />
+    <Links v-if="showLinks" />
     <playground v-if="showPlaygroundMsg" />
   </div>
 </template>
 
 <script>
-import links from '@/components/links.vue';
+import Links from '@/components/Links.vue';
 import playground from '@/components/playground.vue';
 
 export default {
   name: 'app',
   components: {
-    links,
+    Links,
     playground,
   },
   data() {

@@ -1,14 +1,48 @@
 .playground {
   display: flex;
-  gap: 0.5rem;
-  height: full;
-}
-.playground-content {
-  display: none;
+  flex-direction: column;
+  height: min-content;
 }
 
-.playground-btn:hover + .playground-content {
+.playground-btn {
+  height: fit-content;
+}
+.playground-content {
   display: flex;
   flex-direction: column;
+  position: fixed;
   gap: 0.3rem;
+  z-index: 2;
+  margin-top: 3em;
+  width: 8.4em;
+
+  a {
+    padding: 0.7em 0;
+  }
+}
+.main-buttons {
+  gap: 20px;
+}
+
+a {
+  white-space: nowrap;
+}
+
+@media (min-width: 999px) {
+  .playground-content {
+    margin: 0;
+    margin-left: 8em;
+    cursor: pointer;
+    padding: 3px;
+    gap: 0;
+    width: fit-content;
+
+    a {
+      padding: 0.7em;
+    }
+    a:hover {
+      background-color: #f9f4ed8b;
+      outline: #f59673 solid 0.002em;
+    }
+  }
 }

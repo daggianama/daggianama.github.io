@@ -20,10 +20,6 @@ body {
   font-size: 3rem;
 }
 
-.main-buttons {
-  gap: 20px;
-}
-
 button {
   padding: 22px 32px;
   font-weight: 300;
@@ -71,10 +67,6 @@ button {
   button {
     font-size: 15px;
     padding: 2px 15px;
-  }
-  .main-buttons {
-    gap: 7px;
-    margin: 10px 0;
   }
 
   .carrousel {
