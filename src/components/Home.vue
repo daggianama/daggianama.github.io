@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import Links from './Links.vue';
+import Links from '@/components/Links.vue';
 import playground from '@/components/playground.vue';
 
 export default {
