@@ -55,6 +55,6 @@
 import './Links.css';
 
 export default {
-  name: 'links',
+  name: 'Links',
 };
 </script>
