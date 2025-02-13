@@ -1,6 +1,6 @@
 <template>
   <div
-    class="links-box text-main-blue p-4 w-sm items-start z-20 mt-2 bg-white/60 border border-main-blue/30"
+    class="links-box text-main-blue p-4 w-sm items-start z-20 mt-2 bg-white/80 border border-main-blue/30"
   >
     <ul class="flex flex-col gap-4 font-mono font-light">
       <li>

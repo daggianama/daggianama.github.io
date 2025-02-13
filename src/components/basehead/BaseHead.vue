@@ -47,7 +47,7 @@
         </button>
         <div
           v-if="showPlaygroundMsg"
-          class="playground-content font-mono font-light text-main-blue items-start bg-white/90 border border-main-blue/30"
+          class="playground-content font-mono font-light text-main-blue items-start bg-white/80 border border-main-blue/30"
         >
           <a>Data visual</a>
           <a>3D dev</a>
