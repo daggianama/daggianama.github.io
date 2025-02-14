@@ -37,7 +37,7 @@
         </button>
       </div>
     </div>
-    <Links v-if="showLinks" />
+    <Links client:only="vue" v-if="showLinks" />
     <playground v-if="showPlaygroundMsg" />
   </div>
 </template>
