@@ -65,7 +65,7 @@
       <section class="art-section">
         <img
           class="cv-img w-200px"
-          src="public/img/art_cv.png"
+          src="img/art_cv.png"
           alt="Artistic CV of Daggiana Madrid, with a collage of images and text describing her background and experience in the creative field."
         />
       </section>
