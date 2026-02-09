@@ -1,21 +1,9 @@
 ---
-//import Background from "@/components/p5.vue"
-import BaseHead from "@/components/basehead/BaseHead.vue"
-import CarrouselProjects from "@/components/CarrouselProjects.vue"
-
-import "@/styles.css"
+import MainLayout from '@/layouts/MainLayout.astro';
+import CarrouselProjects from '@/components/CarrouselProjects.vue';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head> </head><body>
-		<BaseHead client:only="vue"  />
-			<main>
-				<CarrouselProjects client:only="vue" />
-
-				
-			</main>
-			<!-- <Background client:only /> -->
-		
-	</body>
-</html>
+<MainLayout title='UX/UI - Daggiana Madrid'>
+	<CarrouselProjects client:only='vue' />
+	<!-- <Background client:only /> -->
+</MainLayout>

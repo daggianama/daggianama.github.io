@@ -1,20 +1,9 @@
 ---
-import Background from '@/components/p5.vue'
-import Home from '@/components/Home.vue'
-import BaseHead from '@/components/basehead/BaseHead.vue'
-
-import '@/styles.css'
+import MainLayout from '@/layouts/MainLayout.astro';
+import Home from '@/components/Home.vue';
 ---
 
-<!doctype html>
-<html lang='en'>
-	<head> </head>
-	<body>
-		<BaseHead client:only='vue' />
-		<main>
-			<Home client:only='vue' />
-		</main>
-		<!-- <Footer /> -->
-	</body>
-	<Background client:only='vue' />
-</html>
+<MainLayout title='Daggiana Madrid'>
+	<Home client:only='vue' />
+	<!-- <Footer /> -->
+</MainLayout>

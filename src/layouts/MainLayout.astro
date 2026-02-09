@@ -1,0 +1,30 @@
+---
+import BaseHead from '@/components/basehead/BaseHead.vue';
+import Background from '@/components/p5.vue';
+import '@/styles.css';
+
+interface Props {
+	title?: string;
+}
+
+const {title = 'Daggiana Madrid'} = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta
+			name='viewport'
+			content='width=device-width, initial-scale=1.0'
+		/>
+		<title>{title}</title>
+	</head>
+	<body>
+		<BaseHead client:only='vue' />
+		<main>
+			<slot />
+		</main>
+	</body>
+	<Background client:only='vue' />
+</html>

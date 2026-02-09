@@ -81,12 +81,18 @@ export default {
 
 <style lang="scss" scoped>
 .cv-container {
-  gap: 2rem;
+  gap: 1rem;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  @media (min-width: 810px) {
-    flex-direction: row;
+  flex-direction: row;
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 810px) {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
@@ -96,36 +102,62 @@ export default {
 
 .cv-section-title {
   background-color: rgb(34, 34, 34);
-  padding: 0;
+  padding: 0.2rem 0.5rem;
   width: fit-content;
-  font-size: 1.18rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: white;
+
   @media (max-width: 810px) {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
 .cv-list-item {
-  margin-bottom: 7px;
+  margin-bottom: 1.1rem;
+
+  @media (max-width: 899px) {
+    margin-bottom: 1.2rem;
+
+    p {
+      font-size: 11px;
+    }
+  }
 }
 
 .cv-list-item-title {
   font-size: 13px;
   margin-bottom: 6px;
+  @media (max-width: 899px) {
+    font-size: 15px;
+  }
 }
 
 .cv-item-text {
-  padding: 2rem 1.5rem 1.5rem 0;
-  min-width: 22rem;
+  padding: 1rem 0;
+  box-sizing: border-box;
+
+  @media (max-width: 899px) {
+    padding: 0 1.5rem 1.5rem 0;
+  }
 }
+
 .cv-img {
   object-fit: cover;
+  width: 100%;
   max-width: 100%;
-  max-height: auto;
+  height: auto;
+  display: block;
+  max-width: 63vw;
 
-  @media (min-width: 810px) {
-    max-width: 53vw;
+  @media (max-width: 899px) {
+    max-width: 100vw;
+    padding-bottom: 5rem;
   }
+}
+
+.art-section {
+  width: 100%;
+  max-width: 100%;
 }
 </style>

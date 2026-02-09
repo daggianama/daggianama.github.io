@@ -1,17 +1,8 @@
 ---
-import BaseHead from '@/components/basehead/BaseHead.vue'
-import ArtCv from '@/components/ArtCv.vue'
-import Background from '@/components/p5.vue'
-import '@/styles.css'
+import MainLayout from '@/layouts/MainLayout.astro';
+import ArtCv from '@/components/ArtCv.vue';
 ---
 
-<!doctype html>
-<html lang='en'>
-	<head> </head><body>
-		<BaseHead client:only='vue' />
-		<main>
-			<ArtCv client:only='vue' />
-		</main>
-	</body>
-	<Background client:only='vue' />
-</html>
+<MainLayout title='CV - Daggiana Madrid'>
+	<ArtCv client:only='vue' />
+</MainLayout>

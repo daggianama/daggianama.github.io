@@ -28,21 +28,39 @@ a {
   white-space: nowrap;
 }
 
-@media (min-width: 999px) {
+.playground-content {
+  margin: 0;
+  margin-left: 8em;
+  cursor: pointer;
+  padding: 3px;
+  gap: 0;
+  width: fit-content;
+
+  a {
+    padding: 0.7em;
+  }
+  a:hover {
+    background-color: #f9f4ed8b;
+    outline: #f59673 solid 0.002em;
+  }
+}
+
+@media (max-width: 899px) {
   .playground-content {
-    margin: 0;
-    margin-left: 8em;
-    cursor: pointer;
-    padding: 3px;
-    gap: 0;
-    width: fit-content;
+    position: fixed;
+    margin-top: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.3em;
 
     a {
-      padding: 0.7em;
+      padding: 0.7em 14px;
     }
-    a:hover {
-      background-color: #f9f4ed8b;
-      outline: #f59673 solid 0.002em;
-    }
+  }
+
+  .main-buttons {
+    gap: 10px;
   }
 }
