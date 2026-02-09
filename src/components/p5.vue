@@ -17,25 +17,19 @@ export default {
       let density;
 
       s.setup = () => {
-        const docHeight = Math.max(
-          document.body.scrollHeight,
-          document.body.offsetHeight,
-          document.documentElement.scrollHeight,
-          s.windowHeight
-        );
-
-        s.createCanvas(s.windowWidth, docHeight);
+        s.createCanvas(s.windowWidth, s.windowHeight);
         s.pixelDensity(1);
-        s.background(0);
 
         t = 0;
         nl = 0.0005;
         density = 3.6;
         totalX = s.windowWidth;
-        totalY = docHeight;
+        totalY = s.windowHeight;
 
         let c1 = s.color('#f7fcff');
         let c2 = s.color('#bcddfa');
+
+        s.loadPixels();
 
         for (let x = 0; x < totalX; x = x + 1) {
           for (let y = 0; y < totalY; y = y + 1) {
@@ -67,21 +61,15 @@ export default {
       };
 
       s.windowResized = () => {
-        const docHeight = Math.max(
-          document.body.scrollHeight,
-          document.body.offsetHeight,
-          document.documentElement.scrollHeight,
-          s.windowHeight
-        );
-
-        s.resizeCanvas(s.windowWidth, docHeight);
-        s.background(0);
+        s.resizeCanvas(s.windowWidth, s.windowHeight);
 
         totalX = s.windowWidth;
-        totalY = docHeight;
+        totalY = s.windowHeight;
 
         let c1 = s.color('#f7fcff');
         let c2 = s.color('#bcddfa');
+
+        s.loadPixels();
 
         for (let x = 0; x < totalX; x = x + 1) {
           for (let y = 0; y < totalY; y = y + 1) {
@@ -112,11 +100,11 @@ export default {
 
 <style scoped>
 #p5Canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   z-index: -10;
   pointer-events: none;
 }
