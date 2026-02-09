@@ -10,22 +10,27 @@ export default {
 
   mounted() {
     const sketch = (s) => {
+      let t;
       let nl;
+      let totalX;
+      let totalY;
       let density;
-      let scaleFactor = 0.5; // Renderizar al 50% y escalar con CSS
 
-      const generateBackground = () => {
-        let totalX = s.width;
-        let totalY = s.height;
+      s.setup = () => {
+        s.createCanvas(s.windowWidth, s.windowHeight);
+        s.background(0);
 
-        s.loadPixels();
+        t = 0;
+        nl = 0.0005;
+        density = 3.6;
+        totalX = s.windowWidth;
+        totalY = s.windowHeight;
 
         let c1 = s.color('#f7fcff');
         let c2 = s.color('#bcddfa');
 
-        // Procesar cada 2 píxeles para mayor velocidad
-        for (let x = 0; x < totalX; x += 2) {
-          for (let y = 0; y < totalY; y += 2) {
+        for (let x = 0; x < totalX; x = x + 1) {
+          for (let y = 0; y < totalY; y = y + 1) {
             let n = s.noise(x * nl, y * nl);
             let rn = n * density - s.floor(n * density);
 
@@ -36,40 +41,53 @@ export default {
 
             let finalColor = s.lerpColor(c2, c1, d);
 
-            // Llenar un área de 2x2 píxeles
             s.set(x, y, finalColor);
-            s.set(x + 1, y, finalColor);
-            s.set(x, y + 1, finalColor);
-            s.set(x + 1, y + 1, finalColor);
           }
         }
 
         s.updatePixels();
       };
 
-      s.setup = () => {
-        // Crear canvas a resolución reducida
-        let canvasWidth = s.windowWidth * scaleFactor;
-        let canvasHeight = s.windowHeight * scaleFactor;
-        s.createCanvas(canvasWidth, canvasHeight);
-        s.pixelDensity(1); // Evitar pixelDensity alto en pantallas retina
-
-        nl = 0.0005;
-        density = 3.6;
-
-        generateBackground();
-      };
-
       s.draw = () => {
-        // Vacío para ahorrar recursos
+        // let n = s.noise(s.mouseX / 899, s.mouseY / 899);
+        // let size = n * s.windowWidth * 22;
+        // s.colorMode(s.HSL, 100)
+        // let finalColor = s.color(n * 17, 2, n * 245, 0.4)
+        // s.noStroke();
+        // s.fill(finalColor);
+        // s.circle(s.mouseX, s.mouseY, size);
       };
 
       s.windowResized = () => {
-        let canvasWidth = s.windowWidth * scaleFactor;
-        let canvasHeight = s.windowHeight * scaleFactor;
-        s.resizeCanvas(canvasWidth, canvasHeight);
-        generateBackground();
+        s.resizeCanvas(s.windowWidth, s.windowHeight);
+        s.background(0);
+
+        totalX = s.windowWidth;
+        totalY = s.windowHeight;
+
+        let c1 = s.color('#f7fcff');
+        let c2 = s.color('#bcddfa');
+
+        for (let x = 0; x < totalX; x = x + 1) {
+          for (let y = 0; y < totalY; y = y + 1) {
+            let n = s.noise(x * nl, y * nl);
+            let rn = n * density - s.floor(n * density);
+
+            let d = s.map(rn, 0, 0.1, 0, 0.8);
+            if (rn > 0.5) {
+              d = s.map(rn, 0.5, 1, 1, 0);
+            }
+
+            let finalColor = s.lerpColor(c2, c1, d);
+
+            s.set(x, y, finalColor);
+          }
+        }
+
+        s.updatePixels();
       };
+
+      s.mouseClicked = () => {};
     };
 
     new p5(sketch, 'p5Canvas');
@@ -86,8 +104,5 @@ export default {
   height: 100vh;
   z-index: -10;
   pointer-events: none;
-  image-rendering: auto;
-  transform: scale(2);
-  transform-origin: top left;
 }
 </style>
