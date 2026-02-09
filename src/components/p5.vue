@@ -17,14 +17,22 @@ export default {
       let density;
 
       s.setup = () => {
-        s.createCanvas(s.windowWidth, s.windowHeight);
+        const docHeight = Math.max(
+          document.body.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.scrollHeight,
+          s.windowHeight
+        );
+
+        s.createCanvas(s.windowWidth, docHeight);
+        s.pixelDensity(1);
         s.background(0);
 
         t = 0;
         nl = 0.0005;
         density = 3.6;
         totalX = s.windowWidth;
-        totalY = s.windowHeight;
+        totalY = docHeight;
 
         let c1 = s.color('#f7fcff');
         let c2 = s.color('#bcddfa');
@@ -59,11 +67,18 @@ export default {
       };
 
       s.windowResized = () => {
-        s.resizeCanvas(s.windowWidth, s.windowHeight);
+        const docHeight = Math.max(
+          document.body.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.scrollHeight,
+          s.windowHeight
+        );
+
+        s.resizeCanvas(s.windowWidth, docHeight);
         s.background(0);
 
         totalX = s.windowWidth;
-        totalY = s.windowHeight;
+        totalY = docHeight;
 
         let c1 = s.color('#f7fcff');
         let c2 = s.color('#bcddfa');
@@ -97,11 +112,11 @@ export default {
 
 <style scoped>
 #p5Canvas {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   z-index: -10;
   pointer-events: none;
 }

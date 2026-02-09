@@ -22,11 +22,11 @@ const {title = 'Daggiana Madrid', showBackground = true} =
 		/>
 		<title>{title}</title>
 	</head>
-	<body>
+	<body style='position: relative;'>
 		<BaseHead client:only='vue' />
 		<main>
 			<slot />
 		</main>
+		{showBackground && <Background client:only='vue' />}
 	</body>
-	{showBackground && <Background client:only='vue' />}
 </html>
