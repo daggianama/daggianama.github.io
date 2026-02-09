@@ -10,27 +10,22 @@ export default {
 
   mounted() {
     const sketch = (s) => {
-      let t;
       let nl;
-      let totalX;
-      let totalY;
       let density;
+      let scaleFactor = 0.5; // Renderizar al 50% y escalar con CSS
 
-      s.setup = () => {
-        s.createCanvas(s.windowWidth, s.windowHeight);
-        s.background(0);
+      const generateBackground = () => {
+        let totalX = s.width;
+        let totalY = s.height;
 
-        t = 0;
-        nl = 0.0005;
-        density = 3.6;
-        totalX = s.windowWidth;
-        totalY = s.windowHeight;
+        s.loadPixels();
 
         let c1 = s.color('#f7fcff');
         let c2 = s.color('#bcddfa');
 
-        for (let x = 0; x < totalX; x = x + 1) {
-          for (let y = 0; y < totalY; y = y + 1) {
+        // Procesar cada 2 píxeles para mayor velocidad
+        for (let x = 0; x < totalX; x += 2) {
+          for (let y = 0; y < totalY; y += 2) {
             let n = s.noise(x * nl, y * nl);
             let rn = n * density - s.floor(n * density);
 
@@ -41,24 +36,40 @@ export default {
 
             let finalColor = s.lerpColor(c2, c1, d);
 
+            // Llenar un área de 2x2 píxeles
             s.set(x, y, finalColor);
+            s.set(x + 1, y, finalColor);
+            s.set(x, y + 1, finalColor);
+            s.set(x + 1, y + 1, finalColor);
           }
         }
 
         s.updatePixels();
       };
 
-      s.draw = () => {
-        // let n = s.noise(s.mouseX / 899, s.mouseY / 899);
-        // let size = n * s.windowWidth * 22;
-        // s.colorMode(s.HSL, 100)
-        // let finalColor = s.color(n * 17, 2, n * 245, 0.4)
-        // s.noStroke();
-        // s.fill(finalColor);
-        // s.circle(s.mouseX, s.mouseY, size);
+      s.setup = () => {
+        // Crear canvas a resolución reducida
+        let canvasWidth = s.windowWidth * scaleFactor;
+        let canvasHeight = s.windowHeight * scaleFactor;
+        s.createCanvas(canvasWidth, canvasHeight);
+        s.pixelDensity(1); // Evitar pixelDensity alto en pantallas retina
+
+        nl = 0.0005;
+        density = 3.6;
+
+        generateBackground();
       };
 
-      s.mouseClicked = () => {};
+      s.draw = () => {
+        // Vacío para ahorrar recursos
+      };
+
+      s.windowResized = () => {
+        let canvasWidth = s.windowWidth * scaleFactor;
+        let canvasHeight = s.windowHeight * scaleFactor;
+        s.resizeCanvas(canvasWidth, canvasHeight);
+        generateBackground();
+      };
     };
 
     new p5(sketch, 'p5Canvas');
@@ -71,5 +82,12 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  pointer-events: none;
+  image-rendering: auto;
+  transform: scale(2);
+  transform-origin: top left;
 }
 </style>
