@@ -68,8 +68,13 @@ button {
   }
 
   .description {
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 300;
     max-width: 42rem;
+    padding-top: 0;
+    p {
+      line-height: 140%;
+    }
   }
   .email {
     font-size: 12px;

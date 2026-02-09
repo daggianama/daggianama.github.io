@@ -1,20 +1,17 @@
 ---
-import Background from '@/components/p5.vue'
-import Home from '@/components/Home.vue'
 import BaseHead from '@/components/basehead/BaseHead.vue'
-
+import ArtCv from '@/components/ArtCv.vue'
+import Background from '@/components/p5.vue'
 import '@/styles.css'
 ---
 
 <!doctype html>
 <html lang='en'>
-	<head> </head>
-	<body>
+	<head> </head><body>
 		<BaseHead client:only='vue' />
 		<main>
-			<Home client:only='vue' />
+			<ArtCv client:only='vue' />
 		</main>
-		<!-- <Footer /> -->
 	</body>
 	<Background client:only='vue' />
 </html>

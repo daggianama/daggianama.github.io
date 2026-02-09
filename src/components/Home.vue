@@ -3,9 +3,7 @@
     <div
       class="flex flex-col gap-1 z-9 text-gray-800 items-start justify-between"
     >
-      <div
-        class="description text-4xl flex font-light flex-col gap-6 py-1 text-gray-600 w-10/12 mb-2"
-      >
+      <div class="description text-4xl flex flex-col gap-6 py-1 w-10/12 mb-2">
         <p>
           Developer and artist based in Barcelona with a diverse background in
           creative topics: visual arts, 3d printing, video-art, research and
@@ -14,7 +12,7 @@
         <p>
           Around 10 years old, I learned about coding with
           <a
-            className="text-main-blue/90 "
+            className="text-main-blue/90 text-md font-mono"
             href="https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,19 +36,19 @@
       </div>
     </div>
     <Links client:only="vue" v-if="showLinks" />
-    <playground v-if="showPlaygroundMsg" />
+    <Playground v-if="showPlaygroundMsg" />
   </div>
 </template>
 
 <script>
 import Links from '@/components/Links.vue';
-import playground from '@/components/playground.vue';
+import Playground from '@/components/Playground.vue';
 
 export default {
   name: 'app',
   components: {
     Links,
-    playground,
+    Playground,
   },
   data() {
     return {

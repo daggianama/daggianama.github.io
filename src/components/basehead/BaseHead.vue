@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col z-20 gap-2 py-10 items-baseline">
+  <div class="flex flex-col z-20 py-10 items-baseline">
     <div class="flex gap-14 items-baseline">
       <h1 class="font-mono name-title">
         <a href="/">Daggiana Madrid</a>
@@ -10,7 +10,7 @@
       > -->
     </div>
 
-    <div class="flex flex-wrap md:flex-nowrap my-12 items-center main-buttons">
+    <div class="flex flex-wrap md:flex-nowrap my-8 items-center main-buttons">
       <button
         class="w-auto bg-white/20 text-center backdrop-blur-2xl border border-black/50 hover:bg-white/40"
       >
@@ -38,7 +38,14 @@
           Visual work
         </a>
       </button>
-      <div class="playground">
+
+      <button
+        class="playground-btn w-auto bg-main-blue/60 text-white/90 text-center border border-black/50 md:hover:bg-main-blue/80"
+      >
+        <a href="/cv" rel="noopener noreferrer">CV</a>
+      </button>
+
+      <!-- <div class="playground">
         <button
           @click="showPlayground"
           class="playground-btn w-auto bg-main-blue/60 text-white/90 text-center md:hover:bg-main-blue/80"
@@ -52,7 +59,7 @@
           <a>Data visual</a>
           <a>3D dev</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
