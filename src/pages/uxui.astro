@@ -3,7 +3,10 @@ import MainLayout from '@/layouts/MainLayout.astro';
 import CarrouselProjects from '@/components/CarrouselProjects.vue';
 ---
 
-<MainLayout title='UX/UI - Daggiana Madrid'>
+<MainLayout
+	title='UX/UI - Daggiana Madrid'
+	showBackground={false}
+>
 	<CarrouselProjects client:only='vue' />
 	<!-- <Background client:only /> -->
 </MainLayout>

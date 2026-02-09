@@ -5,9 +5,11 @@ import '@/styles.css';
 
 interface Props {
 	title?: string;
+	showBackground?: boolean;
 }
 
-const {title = 'Daggiana Madrid'} = Astro.props;
+const {title = 'Daggiana Madrid', showBackground = true} =
+	Astro.props;
 ---
 
 <!doctype html>
@@ -26,5 +28,5 @@ const {title = 'Daggiana Madrid'} = Astro.props;
 			<slot />
 		</main>
 	</body>
-	<Background client:only='vue' />
+	{showBackground && <Background client:only='vue' />}
 </html>
