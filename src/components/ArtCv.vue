@@ -58,7 +58,13 @@
             <h4 class="cv-list-item-title">
               Research & Design | Fundació Antoni Tapies - Barcelona
             </h4>
-            <p class="cv-list-item-description">2021</p>
+            <p class="cv-list-item-description">2020</p>
+          </li>
+          <li class="cv-list-item">
+            <h4 class="cv-list-item-title">
+              Design and Art Instructor | Institute Toulouse Lautrec - Lima
+            </h4>
+            <p class="cv-list-item-description">2016 - 2019</p>
           </li>
         </ul>
       </section>
