@@ -12,13 +12,15 @@
             </p>
           </li>
           <li class="cv-list-item">
-            <h4 class="cv-list-item-title">Media art & New technologies</h4>
+            <h4 class="cv-list-item-title">
+              Media art & New technologies Postgraduate
+            </h4>
             <p class="cv-list-item-description">UNA Bs.As | 2013-2014</p>
           </li>
           <li class="cv-list-item">
-            <h4 class="cv-list-item-title">Master Art and Education</h4>
+            <h4 class="cv-list-item-title">Master in Art and Education</h4>
             <p class="cv-list-item-description">
-              Universitat Barcelona | 2019 - 2020
+              Universitat de Barcelona | 2019 - 2020
             </p>
           </li>
           <li class="cv-list-item">
