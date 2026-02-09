@@ -28,7 +28,13 @@
             <p class="cv-list-item-description">AllWoman | 2021</p>
           </li>
           <li class="cv-list-item">
-            <h4 class="cv-list-item-title">Web development</h4>
+            <h4 class="cv-list-item-title">Computer Science training</h4>
+            <p class="cv-list-item-description">42 School Barcelona | 2022</p>
+          </li>
+          <li class="cv-list-item">
+            <h4 class="cv-list-item-title">
+              Complete Web development Bootcamp
+            </h4>
             <p class="cv-list-item-description">CodeOp | 2023</p>
           </li>
         </ul>
