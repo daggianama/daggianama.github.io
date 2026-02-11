@@ -1,8 +1,8 @@
 <template>
   <div class="card">
     <img class="w-full" :src="image.href" :alt="image.alt" />
-    <div class="py-5 px-2">
-      <div class="card-content px-6 py-4">
+    <div class="card-content">
+      <div class="card-text-wrapper">
         <div class="card-title font-semibold text-5xl mb-10">
           {{ title }}
         </div>

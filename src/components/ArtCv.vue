@@ -95,7 +95,7 @@ export default {
 
 <style lang="scss" scoped>
 .cv-container {
-  gap: 1rem;
+  gap: 6vw;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -104,9 +104,9 @@ export default {
   width: 100%;
   box-sizing: border-box;
 
-  @media (max-width: 810px) {
+  @media (max-width: 1120px) {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 
@@ -162,9 +162,9 @@ export default {
   max-width: 100%;
   height: auto;
   display: block;
-  max-width: 63vw;
+  max-width: 54vw;
 
-  @media (max-width: 899px) {
+  @media (max-width: 1120px) {
     max-width: 100vw;
     padding-bottom: 5rem;
   }
