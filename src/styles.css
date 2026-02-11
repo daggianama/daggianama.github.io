@@ -102,6 +102,12 @@ button {
     -webkit-touch-callout: none; /* iOS Safari */
   }
 
+  h1 {
+    a {
+      font-size: 20px;
+    }
+  }
+
   body {
     margin: 0 18px;
   }
